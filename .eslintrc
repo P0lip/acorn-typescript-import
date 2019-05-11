@@ -1,0 +1,34 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2015
+    },
+    "env": {
+        "node": true
+    },
+    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+    "rules": {
+        "func-names": "off",
+        "no-param-reassign": "warn",
+        "no-restricted-syntax": "off",
+        "function-paren-newline": "off",
+        "global-require": "warn",
+        "no-continue": "off",
+        "no-labels": "off",
+        "no-label-var": "off",
+        "no-unused-vars": ["error", { "vars": "all", "args": "none" } ],
+        "no-void": "off",
+        "prettier/prettier": "error"
+    },
+    "overrides": [
+        {
+            "files": ["tests/**/*.js"],
+            "parserOptions": {
+                "ecmaVersion": 2018
+            },
+            "env": {
+                "mocha": true
+            }
+        }
+    ],
+
+}
