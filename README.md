@@ -20,6 +20,10 @@ const acornExportNsFrom = require('acorn-typescript-import');
 Parser.extend(acornExportNsFrom).parse('import foo = require("bar")');
 ```
 
+### Note
+
+This plugin should be treated as a PoC. You should be always using ESM.
+
 ## Thanks
 
 Readme and tests based on [acorn-export-ns-from](https://github.com/acornjs/acorn-export-ns-from).
